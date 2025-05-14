@@ -10,6 +10,18 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from get_driver import driver, detmir_url
 
 
+def test_region_and_cookies(driver):
+    """Во всплывающем окне Регион, кликаем по кнопке "Верно" и добавляем куки"""
+    try:
+        geo_click = WebDriverWait(driver, 30).until(
+            EC.presence_of_element_located((By.XPATH, './/span[contains(text(), "Верно!")]')))
+        ActionChains(driver).pause(2).click(geo_click).perform()
+        driver.add_cookie(cookie)
+        driver.refresh()
+    except (TimeoutException, NoSuchElementException):
+        pytest.fail("Элемент не найден, пропускаем этот блок")
+
+
 def comparison_url_zoo(driver):
     """Сравнение текущего URL ожидаемым"""
     zoo_url = driver.current_url
