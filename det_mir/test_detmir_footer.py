@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urlparse
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-from get_driver import driver, log_test, detmir_url
+from get_driver import driver, detmir_url
 
 
 def comparison_url_zoo(driver):
