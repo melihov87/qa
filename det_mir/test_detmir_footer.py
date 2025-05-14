@@ -28,7 +28,6 @@ def output_result_text_page(driver, actual_result, expected_result):
     driver.back()
 
 
-@log_test
 def test_status_code_main_page(driver):
     """Проверка status_code"""
     try:
@@ -39,7 +38,6 @@ def test_status_code_main_page(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_banner_in_footer(driver):
     """Клик по баннеру в шапке"""
     try:
@@ -51,7 +49,6 @@ def test_banner_in_footer(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_zoo_click_footer(driver):
     """Клик по логотипу ЗООЗАВР в футоре и проверка URL адреса"""
     try:
@@ -63,7 +60,6 @@ def test_zoo_click_footer(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_choosing_region(driver):
     """Клик на кнопку 'Выбор региона' и проверка заголовка окна"""
     try:
@@ -82,7 +78,6 @@ def test_choosing_region(driver):
         pytest.fail(f"Элемент не найден или не кликабелен: {str(e)}")
 
 
-@log_test
 def test_store_selection(driver):
     """Клик по "Выбор магазина" и проверка заголовка страницы"""
     try:
@@ -98,7 +93,6 @@ def test_store_selection(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_delivery_payment(driver):
     """Клик по "Доставка и оплата" и проверка заголовка страницы"""
     try:
@@ -112,7 +106,6 @@ def test_delivery_payment(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_selling_detmir(driver):
     """Клик по "Продавать в Детском мире" и проверка заголовка страницы"""
     try:
@@ -129,7 +122,6 @@ def test_selling_detmir(driver):
         pytest.fail("Элемент не найден или текст не загрузился")
 
 
-@log_test
 def test_exchange_refund(driver):
     """Клик по "Обмен и возврат товара" и проверка заголовка страницы"""
     try:
@@ -144,7 +136,6 @@ def test_exchange_refund(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_feedback(driver):
     """Клик по "Еще" и "Обратная связь" и проверка заголовка страницы"""
     try:
@@ -162,7 +153,6 @@ def test_feedback(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_order_status(driver):
     """Клик по "Статус заказа", проверка появления окна входа/регистрации и перехода на страницу Профиль"""
     try:
@@ -196,7 +186,6 @@ def test_order_status(driver):
         return False
 
 
-@log_test
 def test_chat(driver):
     """Клик по "Чат с помощником" """
     try:
@@ -226,7 +215,6 @@ def test_chat(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_switching_iframe(driver):
     """Переключение на другой iframe"""
     try:
@@ -235,7 +223,6 @@ def test_switching_iframe(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_click_on_logo(driver):
     """Клик по логотипу для проверки работоспособности кликабельности"""
     try:
@@ -247,7 +234,6 @@ def test_click_on_logo(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_click_on_profile(driver):
     """Клик по "Профиль", проверка всплывающего окна авторизации/регистрации и перехода на страницу Профиль"""
     try:
@@ -274,7 +260,6 @@ def test_click_on_profile(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_click_on_bonus_card(driver):
     """Клик по "Бонусная карта" и проверка соответствия страницы"""
     try:
@@ -292,7 +277,6 @@ def test_click_on_bonus_card(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_click_on_cart(driver):
     """Клик по "Корзина"  и проверка соответствия страницы"""
     try:
