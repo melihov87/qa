@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
-from get_driver import driver, log_test
+from get_driver import driver
 from test_detmir_footer import output_result_text_page, comparison_url_zoo
 
 
