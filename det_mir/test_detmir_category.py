@@ -39,7 +39,6 @@ def close_window_discount(driver):
         print("Flocktory-виджет не появился.")
 
 
-@log_test
 def test_click_on_search(driver):
     """Клик по полю Поиск и ввод запроса, проверка ответа на запрос"""
     try:
@@ -67,7 +66,6 @@ def test_click_on_search(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_click_on_banner_in_menu(driver):
     """Клик по баннеру в поле меню"""
     try:
@@ -86,7 +84,6 @@ def test_click_on_banner_in_menu(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_click_on_promotions(driver):
     """Клик по кнопке Акции"""
     driver.refresh()
@@ -102,7 +99,6 @@ def test_click_on_promotions(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_cursor_at_category(driver):
     """Наведение курсора на Категории с подкатегориями"""
     try:
@@ -142,7 +138,6 @@ def test_cursor_at_category(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_clothing_and_shoes(driver):
     """Клик по Одежда и обувь и сравнение текста тега h1"""
     try:
@@ -158,7 +153,6 @@ def test_clothing_and_shoes(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_children_hygiene(driver):
     """Клик по Подгузники и гигиена и сравнение текста тега h1"""
     try:
@@ -175,7 +169,6 @@ def test_children_hygiene(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_children_nutrition(driver):
     """Клик по Питание и кормление и сравнение текста тега h1"""
     try:
@@ -191,7 +184,6 @@ def test_children_nutrition(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_children_games(driver):
     """Клик по Игрушки и игры и сравнение текста тега h1"""
     try:
@@ -206,7 +198,6 @@ def test_children_games(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_children_room(driver):
     """Клик по Детская комната и сравнение текста тега h1"""
     try:
@@ -221,7 +212,6 @@ def test_children_room(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_walking_and_traveling(driver):
     """Клик по Прогулки и путешествия и сравнение текста тега h1"""
     try:
@@ -236,7 +226,6 @@ def test_walking_and_traveling(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_stationery_school(driver):
     """Клик по Канцтовары и товары для школы и сравнение текста тега h1"""
     try:
@@ -252,7 +241,6 @@ def test_stationery_school(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_sports_recreation(driver):
     """Наведение курсора на Еще и клик по Спорт и отдых и сравнение текста тега h1"""
     try:
@@ -269,7 +257,6 @@ def test_sports_recreation(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_hobbies_creativity(driver):
     """Наведение курсора на Еще и клик по Хобби и творчество и сравнение текста тега h1"""
     try:
@@ -286,7 +273,6 @@ def test_hobbies_creativity(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_books(driver):
     """Наведение курсора на Еще и клик по Книги и сравнение текста тега h1"""
     try:
@@ -302,7 +288,6 @@ def test_books(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_products_sport(driver):
     """Наведение курсора на Еще и клик по Продукты для здоровья и спорта и сравнение текста тега h1"""
     try:
@@ -318,7 +303,6 @@ def test_products_sport(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_house(driver):
     """Наведение курсора на Еще и клик по Дом и сравнение текста тега h1"""
     try:
@@ -334,7 +318,6 @@ def test_house(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_electronics(driver):
     """Наведение курсора на Еще и клик по Бытовая техника и электроника и сравнение текста тега h1"""
     try:
@@ -350,7 +333,6 @@ def test_electronics(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_parents(driver):
     """Наведение курсора на Еще и клик по Для родителей и сравнение текста тега h1"""
     menu_more(driver)
@@ -363,7 +345,6 @@ def test_parents(driver):
     output_result(driver, actual_result, expected_result)
 
 
-@log_test
 def test_animals(driver):
     """Наведение курсора на Еще и клик по Товары для животных от ЗООЗАВР"""
     try:
@@ -377,7 +358,6 @@ def test_animals(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_gifts(driver):
     """Наведение курсора на Еще и клик по Подарки и сравнение текста тега h1"""
     try:
@@ -393,7 +373,6 @@ def test_gifts(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_close_window(driver):
     """Закрываем всплывающее окно если оно появляется и мешает выполнению теста"""
     try:
@@ -407,7 +386,6 @@ def test_close_window(driver):
         pytest.fail("Элемент не найден, пропускаем этот блок")
 
 
-@log_test
 def test_promo_codes(driver):
     """Наведение курсора на Еще и клик по Промокоды и сравнение текста тега h1"""
     try:
