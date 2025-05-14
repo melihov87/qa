@@ -33,7 +33,6 @@ def driver():
     driver.quit()
 
 
-@log_test
 def test_region_and_cookies(driver):
     """Во всплывающем окне Регион, кликаем по кнопке "Верно" и добавляем куки"""
     try:
