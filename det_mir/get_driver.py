@@ -33,17 +33,6 @@ def driver():
     driver.quit()
 
 
-def log_test(func):
-    """Декоратор для отображения начала и окончания теста"""
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        print(f'\n=== Начало теста: {func.__name__} ===')
-        result = func(*args, **kwargs)
-        print(f'=== Тест выполнен: {func.__name__} ===\n')
-        return result
-    return wrapper
-
-
 @log_test
 def test_region_and_cookies(driver):
     """Во всплывающем окне Регион, кликаем по кнопке "Верно" и добавляем куки"""
